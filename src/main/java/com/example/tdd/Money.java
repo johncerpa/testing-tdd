@@ -1,8 +1,8 @@
 package com.example.tdd;
 
 public class Money implements Expression {
-    protected int amount;
-    protected String currency;
+    protected final int amount;
+    protected final String currency;
 
     public Money(int amount, String currency) {
         this.amount = amount;

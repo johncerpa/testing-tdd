@@ -3,7 +3,7 @@ package com.example.tdd;
 import java.util.HashMap;
 
 public class Bank {
-    HashMap<Pair, Integer> rateMap = new HashMap<>();
+    final HashMap<Pair, Integer> rateMap = new HashMap<>();
 
     Money reduce(Expression source, String toCurrency) {
         return source.reduce(this, toCurrency);
