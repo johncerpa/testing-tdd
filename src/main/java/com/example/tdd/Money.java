@@ -9,11 +9,11 @@ public class Money implements Expression {
         this.currency = currency;
     }
 
-    public static Money dollar(int amount) {
+    static Money dollar(int amount) {
         return new Money(amount, "USD");
     }
 
-    public static Money franc(int amount) {
+    static Money franc(int amount) {
         return new Money(amount, "CHF");
     }
 
